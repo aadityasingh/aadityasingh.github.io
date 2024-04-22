@@ -21,14 +21,14 @@
 title: Aaditya Singh
 email: awesomeaaditya@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-PhD Student at the Gatsby Computational Neuroscience Unit, supervised
-by Prof. Andrew M. Saxe and Dr. Felix Hill. Previously at Meta AI (LLaMa 3),
-Google DeepMind, and MIT. Working on learning dynamics, in-context learning,
-concept formation, and large language models.
+  PhD Student at the Gatsby Computational Neuroscience Unit, supervised
+  by Prof. Andrew M. Saxe and Dr. Felix Hill. Previously at Meta AI (LLaMa 3),
+  Google DeepMind, and MIT. Working on learning dynamics, in-context learning,
+  concept formation, and large language models.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "aadityasingh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Aaditya6284
-github_username:  aadityasingh
+github_username: aadityasingh
 
 # Build settings
 theme: minima
