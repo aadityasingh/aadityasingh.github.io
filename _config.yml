@@ -18,13 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Aaditya Singh
-email: awesomeaaditya@gmail.com
+title: Aaditya K Singh
+email: aaditya.singh.21@ucl.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   PhD Student at the Gatsby Computational Neuroscience Unit, supervised
-  by Prof. Andrew M. Saxe and Dr. Felix Hill. Previously at Meta AI (LLaMa 3),
-  Google DeepMind, and MIT. Working on learning dynamics, in-context learning,
-  concept formation, and large language models.
+  by Prof. Andrew M. Saxe and Dr. Felix Hill.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "aadityasingh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Aaditya6284
