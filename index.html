@@ -141,7 +141,7 @@ function copybib(paperid) {
 <p align="center">
 <name>Aaditya K Singh</name>
 </p><p>
-I'm currently doing a PhD at the Gatsby Computational Neuroscience Unit in London, where I'm lucky to be co-supervised by <a href="https://www.saxelab.org/people/andrewsaxe/">Andrew Saxe</a> and <a href="https://fh295.github.io/">Felix Hill</a>. I'm interested in building and better understanding safe AIs that can push the frontiers of human reasoning and help us do science as safe and helpful assistants. During my PhD, I've had the pleasure of interning at Meta AI (with <a href="http://www.arimorcos.com/">Ari Morcos</a> and then on the <a href="https://ai.meta.com/research/publications/the-llama-3-herd-of-models/">Llama 3/3.1 team</a> and <a href="https://deepmind.google/">Google DeepMind</a> (on the Grounded Language Agents team).
+I'm currently doing a PhD at the Gatsby Computational Neuroscience Unit in London, where I'm lucky to be co-supervised by <a href="https://www.saxelab.org/people/andrewsaxe/">Andrew Saxe</a> and <a href="https://fh295.github.io/">Felix Hill</a>. I'm interested in building and better understanding safe AIs that can push the frontiers of human reasoning and help us do science as safe and helpful assistants. During my PhD, I've had the pleasure of interning at <a href="https://ai.meta.com/research/">Meta FAIR</a> (with <a href="http://www.arimorcos.com/">Ari Morcos</a> and then on the <a href="https://ai.meta.com/research/publications/the-llama-3-herd-of-models/">Llama 3/3.1 team</a> and <a href="https://deepmind.google/">Google DeepMind</a> (on the Grounded Language Agents team).
 </p><p>
 Before my PhD, I did my undergrad and master's at MIT, where I double majored in Computer Science and Neuroscience, and was supervised by <a href="https://people.csail.mit.edu/boris/boris.html">Boris Katz</a> and <a href="https://deepmind.com/">Ila Fiete</a>. I also did a smattering of internships in <a href="https://www.metsci.com/">applied math</a>, <a href="https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Computational-Physics-Fluid-Dynamics/">computational physics</a>, <a href="https://www.featurex.ai/">software engineering</a>, <a href="https://www.orbitalinsight.com/">computer vision</a>, and <a href="https://www.citadelsecurities.com/">quantitative research</a> on my path to figuring out what I wanted to do.
 </p><p align=center>
@@ -194,7 +194,7 @@ Before my PhD, I did my undergrad and master's at MIT, where I double majored in
 <p id="abstract">Induction heads are thought to be responsible for much of in-context learning. We take inspiration from optogenetics in neuroscience to introduce a framework for measuring and manipulating activations in a deep network throughout training. We introduce the method of <i>clamping</i> to better understand what gives rise to the phase change characteristic of induction circuit formation, finding that the interaction between three smoothly evolving sub-circuits yields this sudden drop in the loss.</p>
 <!-- bibtex -->
 <p id="bibtex"><tt>
-@misc{singh2024needsrightinductionhead,
+@misc{singh2024needsrightinductionhead, <br>
 &nbsp; title={What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation}, <br>
 &nbsp; author={Aaditya K. Singh and Ted Moskovitz and Felix Hill and Stephanie C. Y. Chan and Andrew M. Saxe}, <br>
 &nbsp; year={2024}, <br>
@@ -238,7 +238,7 @@ hidebib('singh2024ih');
 <p id="abstract">We train transformers on synthetic data designed so that both in-context learning (ICL) and in-weights learning (IWL) strategies can lead to correct predictions. We find that ICL is often <i>transient</i>, meaning it first emerges, then disappears and gives way to IWL, all while the training loss decreases, indicating an asymptotic preference for IWL. We find that L2 regularization may offer a path to more persistent ICL that removes the need for early stopping based on ICL-style validation tasks. Finally, we present initial evidence that ICL transience may be caused by competition between ICL and IWL circuits.</p>
 <!-- bibtex -->
 <p id="bibtex"><tt>
-@inproceedings{singh2023transience,
+@inproceedings{singh2023transience, <br>
 &nbsp; author = {Singh, Aaditya and Chan, Stephanie and Moskovitz, Ted and Grant, Erin and Saxe, Andrew and Hill, Felix}, <br>
 &nbsp; booktitle = {Advances in Neural Information Processing Systems}, <br>
 &nbsp; editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine}, <br>
@@ -253,7 +253,56 @@ hidebib('singh2024ih');
 <script xml:space="preserve" language="JavaScript">
 hidebib('singh2023transience');
 </script>
-<p><i>Reproduced by:</i> <a href="https://arxiv.org/abs/2406.00053">This recent paper</a> in naturalistic settings.</p>
+<p><i>Reproduced by</i> <a href="https://arxiv.org/abs/2406.00053">this recent paper</a> in naturalistic settings.</p>
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="chan2022data"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/Chan2022.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2205.05055">
+<papertitle>Data distributional properties drive emergent in-context learning in transformers</papertitle></a><br>
+<!-- authors -->
+<a href="https://scholar.google.com/citations?user=bXOt49QAAAAJ&hl=en">Stephanie C.Y. Chan</a>,
+<a href="https://scholar.google.com/citations?user=evIkDWoAAAAJ&hl=en">Adam Santoro</a>,
+<a href="https://scholar.google.com/citations?user=_N44XxAAAAAJ&hl=en">Andrew Kyle Lampinen</a>,
+<a href="https://scholar.google.com/citations?user=YizAq4gAAAAJ&hl=en">Jane X. Wang</a>,
+<strong>Aaditya K Singh*</strong>,
+<a href="https://scholar.google.com/citations?user=cw_TpTcAAAAJ&hl=en">Pierre H. Richemond</a>,
+<a href="https://scholar.google.com/citations?user=ht_psVIAAAAJ&hl=en">Jay McClelland</a>,
+<a href="https://scholar.google.co.uk/citations?user=4HLUnhIAAAAJ&hl=en">Felix Hill</a><br>
+<!-- publication status -->
+<em>Neural Information Processing Systems (NeurIPS)</em>, 2022 <award>(Oral)</award><br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2205.05055">arxiv</a> |
+<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/77c6ccacfd9962e2307fc64680fc5ace-Abstract-Conference.html">neurips</a>
+<a href="https://github.com/aadityasingh/icl-dynamics">github</a> |
+<a href="https://x.com/Aaditya6284/status/1724645286495281423">tweet</a> |
+<a href="javascript:toggleAbsVsBib('chan2022data')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">Large transformer-based models are able to perform in-context few-shot learning, without being explicitly trained for it. We find that in-context learning (ICL) emerges when the training data exhibits particular distributional properties such as burstiness (items appear in clusters rather than being uniformly distributed over time) and having large numbers of rarely occurring classes. We found that in-context learning typically trades off against more conventional weight-based learning, but that the two modes of learning could co-exist in a single model when it was trained on data following a skewed Zipfian distribution (a common property of naturalistic data, including language).</p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@inproceedings{chan2022icldata, <br>
+&nbsp; author = {Chan, Stephanie and Santoro, Adam and Lampinen, Andrew and Wang, Jane and Singh, Aaditya and Richemond, Pierre and McClelland, James and Hill, Felix}, <br>
+&nbsp; booktitle = {Advances in Neural Information Processing Systems}, <br>
+&nbsp; editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh}, <br>
+&nbsp; pages = {18878--18891}, <br>
+&nbsp; publisher = {Curran Associates, Inc.}, <br>
+&nbsp; title = {Data Distributional Properties Drive Emergent In-Context Learning in Transformers}, <br>
+&nbsp; url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/77c6ccacfd9962e2307fc64680fc5ace-Paper-Conference.pdf}, <br>
+&nbsp; volume = {35}, <br>
+&nbsp; year = {2022} <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('chan2022data');
+</script>
+<p><i>Our insights were used by</i> <a href="https://arxiv.org/abs/2312.03801">this recent paper</a> to elicit ICL in RL settings.</p>
 </td></tr>
 <!-- project end -->
 
@@ -276,9 +325,9 @@ Llama team, AI@Meta, Contributors: <strong>Aaditya K Singh</strong>, ...<br>
 <a href="https://github.com/meta-llama/llama-models">github</a> |
 <a href="https://x.com/Aaditya6284/status/1815871036669452689">tweet</a>
 <!-- TODO update when bibtex is out -->
-<!-- <a href="javascript:toggleAbsVsBib('singh2024ih')" id="toggle">show bibtex</a> -->
+<!-- <a href="javascript:toggleAbsVsBib('llama3')" id="toggle">show bibtex</a> -->
 <p></p>
-<p id="abstract">Llama 3 is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. My contributions were to Math pretraining data (S3.1.1), Scaling laws (S3.2.1), and Evaluation (S5).</p>
+<p id="abstract">Llama 3 is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. <br><br> My contributions: Math pretraining data (S3.1.1), Scaling laws (S3.2.1), and Evals (S5)</p>
 <!-- <p id="bibtex"><tt>
 @misc{singh2024needsrightinductionhead,
 &nbsp; title={What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation}, 
@@ -291,8 +340,48 @@ Llama team, AI@Meta, Contributors: <strong>Aaditya K Singh</strong>, ...<br>
 }
 </tt></p>
 <script xml:space="preserve" language="JavaScript">
-hidebib('singh2024ih');
+hidebib('llama3');
 </script> -->
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="singh2024tokenization"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/Tokenization.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2402.14903">
+<papertitle>Tokenization counts: the impact of tokenization on arithmetic in frontier LLMs</papertitle></a><br>
+<!-- authors -->
+<strong>Aaditya K Singh*</strong>,
+<a href="https://scholar.google.com/citations?user=K8E0T7MAAAAJ&hl=en">DJ Strouse</a><br>
+<!-- publication status -->
+<em>In submission</em>, 2024<br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2402.14903">arxiv</a> |
+<a href="https://github.com/aadityasingh/TokenizationCounts">github</a> |
+<a href="https://twitter.com/Aaditya6284/status/1762558428617007569">tweet</a> |
+<a href="javascript:toggleAbsVsBib('singh2024tokenization')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">Through a series of carefully controlled, inference-time experiments, we find evidence of strong (scale-dependent) number tokenization-induced inductive biases in numerical reasoning in frontier LLMs. Specifically, we demonstrate that GPT-3.5 and GPT-4 models show largely improved performance when using right-to-left (as opposed to default left-to-right) number tokenization. Furthermore, we find that model errors when using standard left-to-right tokenization follow stereotyped error patterns, suggesting that model computations are systematic rather than approximate. These effects are weaker in larger models (GPT-4) yet stronger in newer, smaller models (GPT 4 Turbo).</p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{singh2024tokenization, <br>
+&nbsp; title={Tokenization counts: the impact of tokenization on arithmetic in frontier LLMs},  <br>
+&nbsp; author={Aaditya K. Singh and DJ Strouse}, <br>
+&nbsp; year={2024}, <br>
+&nbsp; eprint={2402.14903}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.CL}, <br>
+&nbsp; url={https://arxiv.org/abs/2402.14903},  <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('singh2024tokenization');
+</script>
+<p><i>Reproduced by</i> <a href="https://www.beren.io/2024-07-07-Right-to-Left-Integer-Tokenization/">this recent blog post</a> in newer models (e.g., Llama 3). <a href="https://www.anthropic.com/news/claude-3-family">Claude 3</a>, released after our work and with SOTA math capabilities, also notably <a href="https://x.com/javirandor/status/1768616042224374133?s=20">uses R2L tokenization</a>.</p>
 </td></tr>
 <!-- project end -->
 
