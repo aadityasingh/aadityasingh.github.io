@@ -5,6 +5,8 @@
 layout: home
 ---
 
-# Testing
-
 How does this look?
+
+Does first line auto title?
+
+I'm Aaditya, a PhD Student.
