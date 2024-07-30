@@ -2,12 +2,12 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
+title: Hi! I'm Aaditya
 layout: home
 ---
 
-# Hi! I'm Aaditya
-
-![Profile](/assets/images/Aaditya167KB.jpeg)
+<!-- This image is way too big and not sure how to make it show in the top left -->
+![Profile](/assets/images/Aaditya167KB.jpeg) 
 
 I'm currently doing a PhD at the Gatsby Computational Neuroscience Unit in London, where I'm lucky to be co-supervised by [Andrew Saxe](https://www.saxelab.org/people/andrewsaxe/) and [Felix Hill](https://fh295.github.io/). I'm interested in building and better understanding safe AIs that can push the frontiers of human reasoning and help us do science as safe and helpful assistants. During my PhD, I've also had the pleasure of interning at Meta AI (with [Ari Morcos](http://www.arimorcos.com/) and then on the [LLaMa 3/3.1](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/) team) and [Google DeepMind](https://deepmind.google/).
 

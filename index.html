@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STG67VH2DD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-STG67VH2DD');
+</script>
+<meta name=viewport content="width=800">
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+<style type="text/css">
+  /* Color scheme stolen from Sergey Karayev */
+  a {
+  color: #1772d0;
+  text-decoration:none;
+  }
+  a:focus, a:hover {
+  color: #f09228;
+  text-decoration:none;
+  }
+  body,td,th,tr,p,a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px
+  }
+  strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  }
+  heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  }
+  heading2 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  }
+  papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700
+  }
+  name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  }
+  award {
+  color: red;
+  font-weight: 700;
+  }
+  .paperthumbcol
+  {
+  vertical-align: middle;
+  width: 25%;
+  }
+  .paperthumb
+  {
+  width: 160px;
+  }
+  .papertextcol
+  {
+  vertical-align: middle;
+  width: 75%;
+  }
+  .one
+  {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  }
+  .two
+  {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  }
+  .fade {
+   transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+  }
+  span.highlight {
+      background-color: #ffffd0;
+  }
+</style>
+<!-- javascript -->
+<script>
+function hidebib(paperid)
+{
+  var block = document.getElementById(paperid);
+  block.querySelector("#bibtex").style.display = 'none' ;
+}
+function toggleblock(blockid)
+{
+  var block = document.getElementById(blockid) ;
+  if (block.style.display == 'none') {
+      block.style.display = 'block' ;
+  } else {
+      block.style.display = 'none' ;
+  }
+}
+function toggleAbsVsBib(paperid)
+{
+  var block = document.getElementById(paperid);
+  if (block.querySelector("#abstract").style.display == 'none'){
+  	block.querySelector("#abstract").style.display = 'block';
+  	block.querySelector("#bibtex").style.display = 'none';
+  	block.querySelector("#toggle").innerText = 'show bibtex';
+  } else {
+  	block.querySelector("#abstract").style.display = 'none';
+  	block.querySelector("#bibtex").style.display = 'block';
+  	block.querySelector("#toggle").innerText = 'show abstract';
+  }
+}
+function copybib(paperid) {
+  /* Get the text field */
+  var block = document.getElementById(paperid) ;
+  var bib = block.getElementsByTagName('pre') ;
+  var copyText = bib[0].firstChild.nodeValue ;
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText);
+}
+</script>
+<link rel="icon" type="image/png" href="images/robot.png">
+<title>Aaditya K Singh</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+<tr><td>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr><td width="67%" valign="middle">
+<p align="center">
+<name>Aaditya K Singh</name>
+</p><p>
+I'm currently doing a PhD at the Gatsby Computational Neuroscience Unit in London, where I'm lucky to be co-supervised by <a href="https://www.saxelab.org/people/andrewsaxe/">Andrew Saxe</a> and <a href="https://fh295.github.io/">Felix Hill</a>. I'm interested in building and better understanding safe AIs that can push the frontiers of human reasoning and help us do science as safe and helpful assistants. During my PhD, I've also had the pleasure of interning at Meta AI (with <a href="http://www.arimorcos.com/">Ari Morcos</a> and then on the <a href="https://ai.meta.com/research/publications/the-llama-3-herd-of-models/">Llama 3/3.1 team</a> and <a href="https://deepmind.google/">Google DeepMind</a> (on the Grounded Language Agents team).
+</p><p>
+Before my PhD, I did my undergrad and master's at MIT, where I double majored in Computer Science and Neuroscience, and was supervised by <a href="https://people.csail.mit.edu/boris/boris.html">Boris Katz</a> and <a href="https://deepmind.com/">Ila Fiete</a>. I also did a smattering of internships in <a href="https://www.metsci.com/">applied math</a>, <a href="https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Computational-Physics-Fluid-Dynamics/">computational physics</a>, <a href="https://www.featurex.ai/">software engineering</a>, <a href="https://www.orbitalinsight.com/">computer vision</a>, and <a href="https://www.citadelsecurities.com/">quantitative research</a> on my path to figuring out what I wanted to do.
+</p><p align=center>
+<a href="mailto:aaditya.singh.21@ucl.ac.uk">Email</a> &nbsp|&nbsp
+<a href="https://twitter.com/Aaditya6284">Twitter</a> &nbsp|&nbsp
+<a href="assets/AadityaSinghCV.pdf">CV</a> &nbsp|&nbsp
+<a href="https://scholar.google.com/citations?user=9OPKqmMAAAAJ&hl=en">Scholar</a> &nbsp|&nbsp
+<a href="https://github.com/aadityasingh">GitHub</a>
+</p></td>
+<td width="33%">
+<img src="assets/images/Aaditya167KB.jpeg"> <!-- should be 280x280 -->
+</td></tr></table>
+
+<!-- RESEARCH SECTION -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr> <td width="100%" valign="middle">
+<heading>Research</heading> <p>
+<!-- I'm broadly interested in reinforcement and deep learning. Lately, I've been especially interested in the efficient training of agents that can meaningfully interact and collaborate with humans. My <a href="downloads/DJStrouseThesis.pdf">PhD thesis ("Optimization of MILES")</a> focused on applications of the information bottleneck (IB) across supervised, unsupervised, and reinforcement learning, and definitely not on collecting airline miles. In past lives, I've also worked on quantum information theory and computational neuroscience. -->
+</p> </td> </tr> </table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+<tr><td width="25%">
+<heading2><i>In-context Learning</i></heading2>
+</td/></tr>
+
+<!-- project begin -->
+<tr id="singh2024ih"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/InductionHeads.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2404.07129">
+<papertitle>What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation</papertitle></a><br>
+<!-- authors -->
+<strong>Aaditya K Singh</strong>,
+<a href="https://scholar.google.com/citations?user=pPVXrTYAAAAJ&hl=en">Ted Moskovitz</a>,
+<a href="https://scholar.google.co.uk/citations?user=4HLUnhIAAAAJ&hl=en">Felix Hill</a>,
+<a href="https://scholar.google.com/citations?user=bXOt49QAAAAJ&hl=en">Stephanie C.Y. Chan*</a>,
+<a href="https://scholar.google.co.uk/citations?user=h0Al1fcAAAAJ&hl=en">Andrew M Saxe*</a><br>
+<!-- publication status -->
+<em>International Conference on Machine Learning (ICML)</em>, 2024 <award>(Spotlight)</award><br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2107.14226">arxiv</a> |
+<a href="https://github.com/aadityasingh/icl-dynamics">github</a> |
+<a href="https://x.com/Aaditya6284/status/1778442926688813421">tweet</a> |
+<a href="javascript:toggleAbsVsBib('singh2024ih')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">We highlight the inherent pessmism towards exploration in a popular family of variational unsupervised skill learning methods. To curb this pessimism, we propose an ensemble uncertainty based exploration bonus that we call discriminator disagreement intrinsic reward, or DISDAIN. We show that DISDAIN improves skill learning in both a gridworld and the Atari57 suite. Thus, we encourage researchers to treat pessimism with DISDAIN.</p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{singh2024needsrightinductionhead,
+&nbsp; title={What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation}, 
+&nbsp; author={Aaditya K. Singh and Ted Moskovitz and Felix Hill and Stephanie C. Y. Chan and Andrew M. Saxe},
+&nbsp; year={2024},
+&nbsp; eprint={2404.07129},
+&nbsp; archivePrefix={arXiv},
+&nbsp; primaryClass={cs.LG},
+&nbsp; url={https://arxiv.org/abs/2404.07129}, 
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('singh2024ih');
+</script>
+</td></tr>
+<!-- project end -->
+
+<tr><td width="25%">
+<heading2><i>Large Language Models</i></heading2>
+</td/></tr>
+
+<!-- project begin -->
+<tr id="llama3"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/Llama3.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://ai.meta.com/research/publications/the-llama-3-herd-of-models/">
+<papertitle>The Llama 3 Herd of Models</papertitle></a><br>
+<!-- authors -->
+Llama team, AI@Meta, Contributors: ..., <strong>Aaditya K Singh</strong>, ...<br>
+<!-- links -->
+<a href="https://scontent.flhr3-4.fna.fbcdn.net/v/t39.2365-6/452387774_1036916434819166_4173978747091533306_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DTS7hDTcxZoQ7kNvgEuOutN&_nc_ht=scontent.flhr3-4.fna&oh=00_AYBqI6zNTnI1fZ8AfXT4T21b9Uwrjq5uqd1QLO3_SZKidg&oe=66AE9C4D">pdf</a> |
+<a href="https://github.com/meta-llama/llama-models">github</a> |
+<a href="https://x.com/Aaditya6284/status/1815871036669452689">tweet</a> |
+<!-- TODO update when bibtex is out -->
+<!-- <a href="javascript:toggleAbsVsBib('singh2024ih')" id="toggle">show bibtex</a>
+<p></p>
+<p id="abstract">We highlight the inherent pessmism towards exploration in a popular family of variational unsupervised skill learning methods. To curb this pessimism, we propose an ensemble uncertainty based exploration bonus that we call discriminator disagreement intrinsic reward, or DISDAIN. We show that DISDAIN improves skill learning in both a gridworld and the Atari57 suite. Thus, we encourage researchers to treat pessimism with DISDAIN.</p>
+<p id="bibtex"><tt>
+@misc{singh2024needsrightinductionhead,
+&nbsp; title={What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation}, 
+&nbsp; author={Aaditya K. Singh and Ted Moskovitz and Felix Hill and Stephanie C. Y. Chan and Andrew M. Saxe},
+&nbsp; year={2024},
+&nbsp; eprint={2404.07129},
+&nbsp; archivePrefix={arXiv},
+&nbsp; primaryClass={cs.LG},
+&nbsp; url={https://arxiv.org/abs/2404.07129}, 
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('singh2024ih');
+</script> -->
+</td></tr>
+<!-- project end -->
+
+</table>
+<!-- end of research section -->
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr> <td> <br>
+<p align="right"> <font size="2">
+<a href="https://github.com/djstrouse/djstrouse.github.io">Good artists copy.</a>
+</font> </p> </td> </tr> </table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-7580334-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+</td></tr></table></body>
