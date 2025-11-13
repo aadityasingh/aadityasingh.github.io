@@ -140,12 +140,15 @@ function copybib(paperid) {
 <tr><td width="67%" valign="middle">
 <p align="center">
 <name>Aaditya K. Singh</name>
+</p><p id="scaling">
+I'm a Member of Technical Staff at OpenAI, where I work on scaling up <a href="https://openai.com/index/learning-to-reason-with-llms/">reinforcment learning (RL) on large language models (LLMs)</a>. My scaling motto is "further, faster, forwards" -- making optimization robust at scale, and then compute efficient, to see how the next 100x in compute can best deliver safe, general intelligence.
+<!-- I'm interested in building and better understanding safe AIs that can push the frontiers of human reasoning and help us do science as safe and helpful assistants. -->
 </p><p>
-I'm currently doing a PhD at the Gatsby Computational Neuroscience Unit in London, where I'm lucky to be co-supervised by <a href="https://www.saxelab.org/people/andrewsaxe/">Andrew Saxe</a> and <a href="https://fh295.github.io/">Felix Hill</a>. I'm interested in building and better understanding safe AIs that can push the frontiers of human reasoning and help us do science as safe and helpful assistants. During my PhD, I've had the pleasure of interning at <a href="https://ai.meta.com/research/">Meta FAIR</a> (with <a href="http://www.arimorcos.com/">Ari Morcos</a> and then on the <a href="https://ai.meta.com/research/publications/the-llama-3-herd-of-models/">Llama 3/3.1 team</a>) and <a href="https://deepmind.google/">Google DeepMind</a> (on the Grounded Language Agents team).
+Before that, I did my PhD at the Gatsby Computational Neuroscience Unit in London, where I was lucky to be co-supervised by <a href="https://www.saxelab.org/people/andrewsaxe/">Andrew Saxe</a> and <a href="https://fh295.github.io/">Felix Hill</a>. During my PhD, I've had the pleasure of interning at <a href="https://ai.meta.com/research/">Meta FAIR</a> (with <a href="http://www.arimorcos.com/">Ari Morcos</a> and then on the <a href="https://ai.meta.com/research/publications/the-llama-3-herd-of-models/">Llama 3/3.1 team</a>) and <a href="https://deepmind.google/">Google DeepMind</a> (on the Grounded Language Agents team). Towards the end, I was also lucky to mentor <a href="https://yedizhang.github.io/">many</a> <a href="">amazing</a> <a href="">students</a>.
 </p><p>
 Before my PhD, I did my undergrad and master's at MIT, where I double majored in Computer Science and Neuroscience, and was supervised by <a href="https://people.csail.mit.edu/boris/boris.html">Boris Katz</a> and <a href="https://deepmind.com/">Ila Fiete</a>. I also did a smattering of internships in <a href="https://www.metsci.com/">applied math</a>, <a href="https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Computational-Physics-Fluid-Dynamics/">computational physics</a>, <a href="https://www.featurex.ai/">software engineering</a>, <a href="https://www.orbitalinsight.com/">computer vision</a>, and <a href="https://www.citadelsecurities.com/">quantitative research</a> on my path to figuring out what I wanted to do.
 </p><p align=center>
-<a href="mailto:aaditya.singh.21@ucl.ac.uk">Email</a> &nbsp|&nbsp
+<a href="mailto:awesomeaaditya@gmail.com">Email</a> &nbsp|&nbsp
 <a href="https://twitter.com/Aaditya6284">Twitter</a> &nbsp|&nbsp
 <a href="assets/AadityaSinghCV.pdf">CV</a> &nbsp|&nbsp
 <a href="https://scholar.google.com/citations?user=9OPKqmMAAAAJ&hl=en">Scholar</a> &nbsp|&nbsp
@@ -159,7 +162,9 @@ Before my PhD, I did my undergrad and master's at MIT, where I double majored in
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 <tr> <td width="100%" valign="middle">
 <heading>Research</heading> <p>
-<!-- I'm broadly interested in reinforcement and deep learning. Lately, I've been especially interested in the efficient training of agents that can meaningfully interact and collaborate with humans. My <a href="downloads/DJStrouseThesis.pdf">PhD thesis ("Optimization of MILES")</a> focused on applications of the information bottleneck (IB) across supervised, unsupervised, and reinforcement learning, and definitely not on collecting airline miles. In past lives, I've also worked on quantum information theory and computational neuroscience. -->
+While my most recent work on scaling up RL is [redacted], I've been grateful to contribute key optimization insights (on scaling both further and faster) to frontier model releases such as <a href="https://openai.com/index/introducing-o3-and-o4-mini/">o3</a> and <a href="https://openai.com/index/introducing-gpt-5/">GPT-5 Thinking</a>.
+</p><p>
+Before that, my <a href="assets/AadityaSinghThesis.pdf">PhD thesis</a> focused on the training dynamics of emergent in-context learning in transformers, motivated by the seminal <a href="https://arxiv.org/abs/2005.14165">GPT-3</a>. I also did many side projects on LLMs, ranging from <a href="singh2022dixit">early RL work on multimodal LLMs in multiplayer games</a> to  <a href="#singh2024tokenization">implicit biases imparted by number tokenization</a>. Scroll on to see some selected publications, organized by topic:
 </p> </td> </tr> </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -167,6 +172,208 @@ Before my PhD, I did my undergrad and master's at MIT, where I double majored in
 <tr><td width="27%">
 <heading2><i>In-Context Learning</i></heading2>
 </td/></tr>
+
+<!-- project begin -->
+<tr id="singh2025coopetition"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/coopetition.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2503.05631">
+<papertitle>Strategy coopetition explains the emergence and transience of in-context learning</papertitle></a><br>
+<!-- authors -->
+<strong>Aaditya K. Singh</strong>,
+<a href="https://scholar.google.com/citations?user=pPVXrTYAAAAJ&hl=en">Ted Moskovitz</a>,
+<a href="https://scholar.google.com/citations?user=Synp9ikAAAAJ&hl=en">Sara Dragutinovic</a>,
+<a href="https://scholar.google.co.uk/citations?user=4HLUnhIAAAAJ&hl=en">Felix Hill</a>,
+<a href="https://scholar.google.com/citations?user=bXOt49QAAAAJ&hl=en">Stephanie C.Y. Chan*</a>,
+<a href="https://scholar.google.co.uk/citations?user=h0Al1fcAAAAJ&hl=en">Andrew M. Saxe*</a><br>
+<!-- publication status -->
+<em>International Conference on Machine Learning (ICML)</em>, 2025 <award>(Oral)</award><br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2503.05631">arxiv</a> |
+<a href="https://github.com/aadityasingh/icl-dynamics">github</a> |
+<a href="https://x.com/Aaditya6284/status/1899123168910176736">tweet</a> |
+<a href="javascript:toggleAbsVsBib('singh2025coopetition')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">The culmination of our series (<a href="#chan2022data">1</a>, <a href="#singh2023transience">2</a>, <a href="#singh2024ih">3</a>) on ICL dynamics, we answer the question of why ICL emerges, if only to fade away later in training. We find that the asymptotic mechanism, which we term context-constrained in-weights learning (CIWL), is actually a hybrid of in-context learning (ICL) and in-weights learning (IWL). While CIWL competes and eventually "crowds out" ICL, it also shares sub-circuits with ICL which leads to cooperative dynamics as well. We term this phenomenon "strategy coopetition," and propose a minimal mathematical model that reproduces the key dynamics. Informed by this model, we were able to identify a setup where ICL is truly emergent and persistent. </p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{singh2025strategycoopetitionexplainsemergence, <br>
+&nbsp; title={Strategy Coopetition Explains the Emergence and Transience of In-Context Learning},  <br>
+&nbsp; author={Aaditya K. Singh and Ted Moskovitz and Sara Dragutinovic and Felix Hill and Stephanie C. Y. Chan and Andrew M. Saxe}, <br>
+&nbsp; year={2025}, <br>
+&nbsp; eprint={2503.05631}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.LG}, <br>
+&nbsp; url={https://arxiv.org/abs/2503.05631},  <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('singh2025coopetition');
+</script>
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="zhang2025dynamics"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/dynamics.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2501.16265">
+<papertitle>Training dynamics of in-context learning in linear attention</papertitle></a><br>
+<!-- authors -->
+<a href="https://scholar.google.com/citations?user=yLbNy28AAAAJ&hl=zh-CN">Yedi Zhang</a>,
+<strong>Aaditya K. Singh</strong>,
+<a href="https://scholar.google.com/citations?user=wmqntyEAAAAJ&hl=en">Peter E. Latham*</a>,
+<a href="https://scholar.google.co.uk/citations?user=h0Al1fcAAAAJ&hl=en">Andrew M. Saxe*</a><br>
+<!-- publication status -->
+<em>International Conference on Machine Learning (ICML)</em>, 2025 <award>(Spotlight)</award><br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2501.16265">arxiv</a> |
+<a href="https://github.com/yedizhang/linattn-icl">github</a> |
+<a href="https://x.com/SaxeLab/status/1930244870041440395?s=20">tweet</a> |
+<a href="javascript:toggleAbsVsBib('zhang2025dynamics')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">We study the gradient descent dynamics of multi-head linear self-attention trained for in-context linear regression. We show that dynamics can differ across parametrizations, and that the separate parametrization (more like actual transformers) leads to an iterative principal component regression in context with the number of principal components increasing over training time. Overall, we provide a theoretical description of how ICL abilities evolve during gradient descent training of linear attention, revealing abrupt acquisition or progressive improvements depending on how the key and query are parametrized.  </p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{zhang2025trainingdynamicsincontextlearning, <br>
+&nbsp; title={Training Dynamics of In-Context Learning in Linear Attention}, <br>
+&nbsp; author={Yedi Zhang and Aaditya K. Singh and Peter E. Latham and Andrew Saxe}, <br>
+&nbsp; year={2025}, <br>
+&nbsp; eprint={2501.16265}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.LG}, <br>
+&nbsp; url={https://arxiv.org/abs/2501.16265},<br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('zhang2025dynamics');
+</script>
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="dragutinovic2025gd"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/gd.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2510.10425">
+<papertitle>Softmax &ge; linear: Transformers may learn to classify in-context by kernel gradient descent</papertitle></a><br>
+<!-- authors -->
+<a href="https://scholar.google.com/citations?user=Synp9ikAAAAJ&hl=en">Sara Dragutinovic</a>,
+<a href="https://scholar.google.co.uk/citations?user=h0Al1fcAAAAJ&hl=en">Andrew M. Saxe*</a>,
+<strong>Aaditya K. Singh</strong><br>
+<!-- publication status -->
+<em>arxiv</em>, 2025<br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2510.10425">arxiv</a> |
+<a href="https://github.com/saradrag/transformer-icl-classification">github</a> |
+<a href="javascript:toggleAbsVsBib('dragutinovic2025gd')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">Existing theoretical work, often based on simplifying assumptions, has primarily focused on linear self-attention and continuous regression tasks, finding transformers can learn in-context by gradient descent. Given that transformers are typically trained on discrete and complex tasks, we bridge the gap from this existing work to the setting of classification, with non-linear (importantly, softmax) activation. We find that transformers still learn to do gradient descent in-context, though on functionals in the kernel feature space and with a context-adaptive learning rate in the case of softmax transformer. </p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{dragutinovic2025softmaxgeqlineartransformers, <br>
+&nbsp; title={Softmax $\geq$ Linear: Transformers may learn to classify in-context by kernel gradient descent}, <br>
+&nbsp; author={Sara Dragutinovic and Andrew M. Saxe and Aaditya K. Singh}, <br>
+&nbsp; year={2025}, <br>
+&nbsp; eprint={2510.10425}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.LG}, <br>
+&nbsp; url={https://arxiv.org/abs/2510.10425}, <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('dragutinovic2025gd');
+</script>
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="lee2025curriculum"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/curriculum.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2506.13253">
+<papertitle>Distinct computations emerge from compositional curricula in in-context learning</papertitle></a><br>
+<!-- authors -->
+<a href="https://scholar.google.com/citations?user=pPVXrTYAAAAJ&hl=en">Jin Hwa Lee</a>,
+<a href="https://scholar.google.com/citations?user=_N44XxAAAAAJ&hl=en">Andrew Kyle Lampinen</a>,
+<strong>Aaditya K. Singh*</strong>,
+<a href="https://scholar.google.co.uk/citations?user=h0Al1fcAAAAJ&hl=en">Andrew M. Saxe*</a><br>
+<!-- publication status -->
+<em>arxiv</em>, 2025<br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2506.13253">arxiv</a> |
+<a href="javascript:toggleAbsVsBib('lee2025curriculum')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">We investigate how presenting a compositional subtask curriculum in context may alter the computations a transformer learns. Models trained with a subtask curriculum can perform zero-shot inference on unseen compositional tasks and are more robust given the same context length. We study how the task and subtasks are represented across the two training regimes. We find that the models employ diverse strategies modulated by the specific curriculum design.  </p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{lee2025distinctcomputationsemergecompositional, <br>
+&nbsp; title={Distinct Computations Emerge From Compositional Curricula in In-Context Learning}, <br>
+&nbsp; author={Jin Hwa Lee and Andrew K. Lampinen and Aaditya K. Singh and Andrew M. Saxe}, <br>
+&nbsp; year={2025}, <br>
+&nbsp; eprint={2506.13253}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.LG}, <br>
+&nbsp; url={https://arxiv.org/abs/2506.13253}, <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('lee2025curriculum');
+</script>
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="lampinen2024broader"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/broader.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2412.03782">
+<papertitle>The broader spectrum of in-context learning</papertitle></a><br>
+<!-- authors -->
+<a href="https://scholar.google.com/citations?user=_N44XxAAAAAJ&hl=en">Andrew Kyle Lampinen</a>,
+<a href="https://scholar.google.com/citations?user=bXOt49QAAAAJ&hl=en">Stephanie C.Y. Chan</a>,
+<strong>Aaditya K. Singh</strong>,
+<a href="https://scholar.google.co.uk/citations?user=h0Al1fcAAAAJ&hl=en">Murray Shanahan</a><br>
+<!-- publication status -->
+<em>arxiv</em>, 2024<br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2412.03782">arxiv</a> |
+<a href="https://x.com/AndrewLampinen/status/1866546723210011077">tweet</a> |
+<a href="javascript:toggleAbsVsBib('lampinen2024broader')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">We provide a perspective that situates supervised few-shot learning in LLMs within a much broader spectrum of meta-learned in-context learning. We suggest that any distribution of sequences in which context non-trivially decreases loss on subsequent predictions can be interpreted as eliciting a kind of in-context learning. This perspective helps to unify the broad set of in-context abilities that language models exhibit -- such as adapting to tasks from instructions or role play, or extrapolating time series. This perspective also sheds light on potential roots of in-context learning in lower-level processing of linguistic dependencies (e.g. coreference or parallel structures). Finally, taking this perspective highlights the importance of generalization, which we suggest can be studied along several dimensions: not only the ability to learn something novel, but also flexibility in learning from different presentations, and in applying what is learned.</p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{lampinen2025broaderspectrumincontextlearning, <br>
+&nbsp; title={The broader spectrum of in-context learning}, <br>
+&nbsp; author={Andrew Kyle Lampinen and Stephanie C. Y. Chan and Aaditya K. Singh and Murray Shanahan}, <br>
+&nbsp; year={2025}, <br>
+&nbsp; eprint={2412.03782}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.CL}, <br>
+&nbsp; url={https://arxiv.org/abs/2412.03782}, <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('lampinen2024broader');
+</script>
+</td></tr>
+<!-- project end -->
 
 <!-- project begin -->
 <tr id="singh2024ih"><td class="paperthumbcol">
@@ -185,7 +392,7 @@ Before my PhD, I did my undergrad and master's at MIT, where I double majored in
 <!-- publication status -->
 <em>International Conference on Machine Learning (ICML)</em>, 2024 <award>(Spotlight)</award><br>
 <!-- links -->
-<a href="https://arxiv.org/abs/2107.14226">arxiv</a> |
+<a href="https://arxiv.org/abs/2404.07129">arxiv</a> |
 <a href="https://github.com/aadityasingh/icl-dynamics">github</a> |
 <a href="https://x.com/Aaditya6284/status/1778442926688813421">tweet</a> |
 <a href="javascript:toggleAbsVsBib('singh2024ih')" id="toggle">show bibtex</a>
@@ -216,7 +423,7 @@ hidebib('singh2024ih');
 <img src="./assets/images/Transience.png" class="paperthumb">
 </td><td class="papertextcol">
 <!-- title -->
-<a href="https://arxiv.org/abs/2404.07129">
+<a href="https://arxiv.org/abs/2311.083609">
 <papertitle>The transient nature of emergent in-context learning in transformers</papertitle></a><br>
 <!-- authors -->
 <strong>Aaditya K. Singh*</strong>,
@@ -382,6 +589,48 @@ hidebib('llama3');
 hidebib('singh2024tokenization');
 </script>
 <p><i>Reproduced by</i> <a href="https://www.beren.io/2024-07-07-Right-to-Left-Integer-Tokenization/">this recent blog post</a> in newer models (e.g., Llama 3). <a href="https://www.anthropic.com/news/claude-3-family">Claude 3</a>, released after our work and with SOTA math capabilities, also notably <a href="https://x.com/javirandor/status/1768616042224374133?s=20">uses R2L tokenization</a>.</p>
+</td></tr>
+<!-- project end -->
+
+<!-- project begin -->
+<tr id="yue2024harp"><td class="paperthumbcol">
+<!-- project symbol -->
+<img src="./assets/images/harp.png" class="paperthumb">
+</td><td class="papertextcol">
+<!-- title -->
+<a href="https://arxiv.org/abs/2412.08819">
+<papertitle>HARP: A challenging human-annotated math reasoning benchmark</papertitle></a><br>
+<!-- authors -->
+<a href="https://www.linkedin.com/in/albert-yue">Albert S. Yue</a>,
+<a href="https://scholar.google.com/citations?user=zc2WyXkAAAAJ&hl=en">Lovish Madaan</a>,
+<a href="https://scholar.google.com/citations?user=pPVXrTYAAAAJ&hl=en">Ted Moskovitz</a>,
+<a href="https://scholar.google.com/citations?user=K8E0T7MAAAAJ&hl=en">DJ Strouse</a>,
+<strong>Aaditya K. Singh</strong><br>
+<!-- publication status -->
+<em>arxiv</em>, 2024<br>
+<!-- links -->
+<a href="https://arxiv.org/abs/2412.08819">arxiv</a> |
+<a href="https://github.com/aadityasingh/HARP">github</a> |
+<a href="https://x.com/Aaditya6284/status/1858737661294637415?s=20">tweet</a> |
+<a href="javascript:toggleAbsVsBib('yue2024harp')" id="toggle">show bibtex</a>
+<p></p>
+<!-- project description -->
+<p id="abstract">We introduce HARP, Human Annotated Reasoning Problems (for Math), consisting of 5,409 problems from the US national math competitions (A(J)HSME, AMC, AIME, USA(J)MO). Of these, 4,780 have answers that are automatically check-able (with libraries such as SymPy). Our dataset also features multiple choices (for 4,110 problems) and an average of two human-written, ground-truth solutions per problem, offering new avenues of research that we explore briefly. We report evaluations for many frontier models and share some interesting analyses, such as demonstrating that frontier models across families intrinsically scale their inference-time compute for more difficult problems. </p>
+<!-- bibtex -->
+<p id="bibtex"><tt>
+@misc{yue2024harpchallenginghumanannotatedmath, <br>
+&nbsp; title={HARP: A challenging human-annotated math reasoning benchmark}, <br>
+&nbsp; author={Albert S. Yue and Lovish Madaan and Ted Moskovitz and DJ Strouse and Aaditya K. Singh}, <br>
+&nbsp; year={2024}, <br>
+&nbsp; eprint={2412.08819}, <br>
+&nbsp; archivePrefix={arXiv}, <br>
+&nbsp; primaryClass={cs.LG}, <br>
+&nbsp; url={https://arxiv.org/abs/2412.08819}, <br>
+}
+</tt></p>
+<script xml:space="preserve" language="JavaScript">
+hidebib('yue2024harp');
+</script>
 </td></tr>
 <!-- project end -->
 
